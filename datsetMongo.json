@@ -1,0 +1,495 @@
+[  {
+    "nom": "Appartement Le Marais",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 220,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 220
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 180
+      }
+    ],
+    "description": "L'Appartement Le Marais est situé dans le quartier historique de Paris. Il dispose d'une cuisine équipée, d'un balcon et de chambres confortables.",
+    "image": "lien_image_appartement_le_marais.jpg"
+  },
+  {
+    "nom": "Hôtel Montparnasse",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 120,
+    "prix_par_nuit": 180,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 180
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 150
+      }
+    ],
+    "description": "L'Hôtel Montparnasse est un choix abordable pour les voyageurs à Paris. Profitez du wifi gratuit et de notre restaurant sur place.",
+    "image": "lien_image_hotel_montparnasse.jpg"
+  },
+  {
+    "nom": "Appartement Quartier Latin",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 210,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 210
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 170
+      }
+    ],
+    "description": "Cet appartement du Quartier Latin est idéalement situé pour explorer les sites historiques de Paris. Profitez de la cuisine équipée et du balcon ensoleillé.",
+    "image": "lien_image_appartement_quartier_latin.jpg"
+  },
+  {
+    "nom": "Hôtel Louvre",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 100,
+    "prix_par_nuit": 220,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 220
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 180
+      }
+    ],
+    "description": "L'Hôtel Louvre est situé à proximité du célèbre musée du Louvre. Détendez-vous dans notre spa après une journée de visites.",
+    "image": "lien_image_hotel_louvre.jpg"
+  },
+  {
+    "nom": "Appartement Champs-Élysées",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 230,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 230
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 190
+      }
+    ],
+    "description": "Cet appartement des Champs-Élysées est idéalement situé pour faire du shopping et des visites. Profitez de la cuisine équipée et du balcon avec vue sur l'avenue célèbre.",
+    "image": "lien_image_appartement_champs_elysees.jpg"
+  },
+  {
+    "nom": "Hôtel Opera",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 90,
+    "prix_par_nuit": 210,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 210
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 170
+      }
+    ],
+    "description": "L'Hôtel Opera est situé à proximité de l'Opéra Garnier. Profitez du wifi gratuit et de notre restaurant sur place.",
+    "image": "lien_image_hotel_opera.jpg"
+  },
+  {
+    "nom": "Appartement Belleville",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 3,
+    "prix_par_nuit": 190,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 190
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 160
+      }
+    ],
+    "description": "Cet appartement de Belleville offre une vue panoramique sur la ville. Profitez de la cuisine équipée et du balcon ensoleillé.",
+    "image": "lien_image_appartement_belleville.jpg"
+  },
+  {
+    "nom": "Hôtel Marais",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 80,
+    "prix_par_nuit": 190,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 190
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 160
+      }
+    ],
+    "description": "L'Hôtel Marais est situé dans un quartier historique de Paris. Profitez du wifi gratuit et de notre spa relaxant.",
+    "image": "lien_image_hotel_marais.jpg"
+  },
+  {
+    "nom": "Appartement Le Bastille",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 200,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 200
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 170
+      }
+    ],
+    "description": "Cet appartement du Bastille est situé dans un quartier animé de Paris. Profitez de la cuisine équipée et du balcon privé.",
+    "image": "lien_image_appartement_le_bastille.jpg"
+  },
+  {
+    "nom": "Hôtel Champs-Élysées",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 120,
+    "prix_par_nuit": 220,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 220
+      },
+      {
+        "type": "Suite de Luxe",
+        "capacite": 2,
+        "prix_par_nuit": 350
+      }
+    ],
+    "description": "L'Hôtel Champs-Élysées est situé sur l'avenue la plus célèbre de Paris. Profitez de la vue sur l'Arc de Triomphe depuis notre suite de luxe.",
+    "image": "lien_image_hotel_champs_elysees.jpg"
+  },
+  {
+    "nom": "Appartement Marais",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 3,
+    "prix_par_nuit": 190,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 190
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 150
+      }
+    ],
+    "description": "Cet appartement du Marais est parfait pour découvrir les charmes du quartier. Profitez de la cuisine équipée et du balcon ensoleillé.",
+    "image": "lien_image_appartement_marais.jpg"
+  },
+  {
+    "nom": "Hôtel Opéra Garnier",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 150,
+    "prix_par_nuit": 260,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 260
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 220
+      }
+    ],
+    "description": "L'Hôtel Opéra Garnier offre un accès facile à l'Opéra et aux grands magasins. Détendez-vous dans notre spa après une journée de shopping.",
+    "image": "lien_image_hotel_opera_garnier.jpg"
+  },
+  {
+    "nom": "Appartement Montparnasse Vue",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 240,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 240
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 200
+      }
+    ],
+    "description": "Cet appartement à Montparnasse offre une vue panoramique sur la ville depuis son balcon. Profitez de la cuisine équipée et de la proximité des théâtres.",
+    "image": "lien_image_appartement_montparnasse_vue.jpg"
+  },
+  {
+    "nom": "Hôtel Bastille",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 80,
+    "prix_par_nuit": 180,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 180
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 150
+      }
+    ],
+    "description": "L'Hôtel Bastille est situé dans le quartier animé de la Bastille. Profitez du wifi gratuit et de notre spa pour vous détendre.",
+    "image": "lien_image_hotel_bastille.jpg"
+  },
+  {
+    "nom": "Appartement Canal Saint-Martin",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 3,
+    "prix_par_nuit": 210,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 210
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 180
+      }
+    ],
+    "description": "Cet appartement du Canal Saint-Martin est parfait pour les amateurs de promenades au bord de l'eau. Profitez de la cuisine équipée et du balcon.",
+    "image": "lien_image_appartement_canal_saint_martin.jpg"
+  },
+  {
+    "nom": "Hôtel République",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 100,
+    "prix_par_nuit": 200,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 200
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 170
+      }
+    ],
+    "description": "L'Hôtel République est situé dans le quartier de la République, proche des bars et des restaurants branchés. Profitez du wifi gratuit et de notre spa.",
+    "image": "lien_image_hotel_republique.jpg"
+  },
+  {
+    "nom": "Appartement Latin Quarter",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 220,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 220
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 180
+      }
+    ],
+    "description": "Cet appartement du Quartier Latin est idéalement situé pour explorer les universités et les librairies de Paris. Profitez de la cuisine équipée et du balcon ensoleillé.",
+    "image": "lien_image_appartement_latin_quarter.jpg"
+  },
+  {
+    "nom": "Hôtel Saint-Germain",
+    "type": "Hôtel",
+    "lieu": "Paris, France",
+    "capacite": 90,
+    "prix_par_nuit": 210,
+    "services": {
+      "wifi_gratuit": true,
+      "restaurant_sur_place": true,
+      "parking": true,
+      "spa": true
+    },
+    "chambres": [
+      {
+        "type": "Chambre double",
+        "capacite": 2,
+        "prix_par_nuit": 210
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 180
+      }
+    ],
+    "description": "L'Hôtel Saint-Germain est situé dans le quartier élégant de Saint-Germain-des-Prés. Profitez du wifi gratuit et de notre spa de détente.",
+    "image": "lien_image_hotel_saint_germain.jpg"
+  },
+  {
+    "nom": "Appartement Le Marais II",
+    "type": "Appartement",
+    "lieu": "Paris, France",
+    "capacite": 4,
+    "prix_par_nuit": 230,
+    "equipements": {
+      "cuisine_equipee": true,
+      "balcon": true
+    },
+    "chambres": [
+      {
+        "type": "Studio",
+        "capacite": 2,
+        "prix_par_nuit": 230
+      },
+      {
+        "type": "Chambre simple",
+        "capacite": 1,
+        "prix_par_nuit": 190
+      }
+    ],
+    "description": "L'Appartement Le Marais II est situé dans le quartier historique de Paris, offrant une vue magnifique sur la Seine. Profitez de la cuisine équipée et du balcon ensoleillé.",
+    "image": "lien_image_appartement_le_marais_ii.jpg"
+  }
+]
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+    <title>Liste des collections</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="stylesHome.css" />
+    <link type="text/css" rel="stylesheet" href="lib/bootstrap.min.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet"/>
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+</h:head>
+<h:body>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="top-buttons" align="right">
+                <h:form>
+                    <h:commandButton action = "home" value = "Home" styleClass="btn" />
+                </h:form>
+            </div>
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title text-center text-primary text-uppercase">Our accommodations</h6>
+                <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">accommodations</span></h1>
+                <div class="booking-form">
+                    <h:form>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <span class="form-label">Destination</span>
+                                <h:inputText id="destination" styleClass="form-control" required="true" autocomplete="on" value="#{booking.destination}"/>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <span class="form-label">Guests</span>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <span class="select-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <span class="form-label">Children</span>
+                                    <select class="form-control">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    <span class="select-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <span class="form-label">Check In</span>
+                                    <input class="form-control" type="date" required="required"/>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <span class="form-label">Check out</span>
+                                    <input class="form-control" type="date" required="required" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-btn">
+                                    <h:form>
+                                        <h:commandButton action="#{booking.filtrage}" value="Check availability" styleClass="btn btn-sm btn-primary rounded py-2 px-4" />
+                                    </h:form>
+                                </div>
+                            </div>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+            <div class="row g-4" id="Data">
+                <ui:repeat var="hebergement" value="#{booking.hebergements}" varStatus="loop">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="#{hebergement.image}" alt=""/>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$#{hebergement.prix_par_nuit}/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">#{hebergement.nom}</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3">
+                                        <i class="#{hebergement.type == 'Chambre' ? 'fa fa-bed text-primary me-2' : 'fa fa-building text-primary me-2'}"></i>
+                                        #{hebergement.type}
+                                    </small>
+                                    <small class="border-end me-3 pe-3">
+                                        <i class="fa fa-map-marker text-primary me-2"></i>
+                                        #{hebergement.lieu}
+                                    </small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">#{hebergement.description}</p>
+                                <div class="d-flex justify-content-between">
+                                    <h:form>
+                                        <h:commandButton action="#{detailHeberg.detailHebergement(hebergement.nom)}" value="View Detail" styleClass="btn btn-sm btn-primary rounded py-2 px-4" />
+                                        <h:commandButton onclick="showPopup();" type="button" value="Book Now" styleClass="btn btn-sm btn-dark rounded py-2 px-4" />
+                                        <!-- Hidden popup div -->
+                                        <div id="popup" class="popup">
+                                            <h:panelGroup>
+                                                <h:outputText value="ton hebergement a ete ajoute avec success!" />
+                                                <h:commandButton value="Close" action="#{detailHeberg.addReservation}" />
+                                            </h:panelGroup>
+                                        </div>
+                                    </h:form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ui:repeat>
+
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <script type="text/javascript">
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+    </script>
+</h:body>
+</html>

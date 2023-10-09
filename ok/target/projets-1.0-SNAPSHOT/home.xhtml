@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<f:view>
+    <h:head>
+        <title>Accueil</title>
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="stylesHome.css" />
+        <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+    </h:head>
+    <h:body>
+        <div id="booking">
+        <div class="top-banner">
+            <!-- Ajoutez le logo à gauche -->
+            <div class="logo">
+                <img src="logoB.png" alt="Logo" />
+            </div>
+            <!-- Ajoutez les boutons à droite -->
+            <div class="top-buttons">
+                <h:form>
+                    <h:commandButton action = "login" value = "Se connecter" styleClass="btn" />
+                    <h:commandButton action="register" value="S'inscrire" styleClass="btn" />
+                </h:form>
+            </div>
+        </div>
+        <div  class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="booking-cta">
+                            <h2>Explorez. Séjournez. Enchantez-vous.</h2>
+
+                                <h3>Découvrez notre sélection d'hôtels et d'hébergements uniques pour votre prochaine aventure.
+                                    Réservez dès maintenant et vivez l'instant.</h3>
+                        </div>
+                        <div class="booking-form">
+                            <form>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <span class="form-label">Destination</span>
+                                        <h:inputText id="destination" styleClass="form-control" required="true" autocomplete="on" value="#{booking.destination}"/>
+                                        <h:outputLabel for="destination">Enter Address, zip, city or airport</h:outputLabel>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label">Guests</span>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label">Children</span>
+                                        <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span class="form-label">Check In</span>
+                                        <input class="form-control" type="date" required="required"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span class="form-label">Check out</span>
+                                        <input class="form-control" type="date" required="required" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-btn">
+                                        <h:form>
+                                            <h:commandButton action="#{booking.filtrage}" value="Check availability" styleClass="submit-btn" />
+                                        </h:form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </h:body>
+</f:view>
+</html>
